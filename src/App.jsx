@@ -1,14 +1,15 @@
-import { Header } from "./components/Header"
-import { ConsultaVagas } from "./pages/ConsultaVagas"
-
+import { BrowserRouter } from "react-router-dom"
+import { Router } from "./Router"
+import { AuthProvider } from "./context/authContext"
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <ConsultaVagas />
-    </>
+    <BrowserRouter>
+      <AuthProvider>
+        <Router />
+      </AuthProvider>
+    </BrowserRouter>
   )
 }
 

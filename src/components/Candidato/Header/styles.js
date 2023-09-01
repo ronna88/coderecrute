@@ -36,15 +36,15 @@ export const ContainerHeader = styled.div`
   }
 `;
 
-export const ButtonSingOut = styled.button`
+export const ButtonLogin = styled.button`
   background: transparent;
   border: none;
-
-  svg {
-    color: #fff;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
+  width: 7.0625rem;
+  height: 2.81475rem;
+  border-radius: 0.375rem;
+  background: #033266;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
 `;

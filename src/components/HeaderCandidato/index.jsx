@@ -2,7 +2,7 @@ import { SignOut } from "@phosphor-icons/react";
 import { ButtonSingOut, ContainerHeader } from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 
-export function Header(){
+export function HeaderCandidato(){
 
   const navigate = useNavigate();
 

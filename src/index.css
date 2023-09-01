@@ -1,9 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
 body {
-    background: #202024;
+  background: #202024;
+}
+
+:root {
+  --white: #E1E1E6;
+  --input-color: #121214;
 }

@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+
 import styled from "styled-components";
 
 export const Overlay = styled(Dialog.Overlay)`
@@ -11,11 +12,10 @@ export const Overlay = styled(Dialog.Overlay)`
 
 export const Title = styled(Dialog.Title)`
   color: #fff;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  max-width: 454px;
+  width: 100%;
   float: left !important;
-
-
   div + & {
     margin-top: 16px;
   }
@@ -23,6 +23,7 @@ export const Title = styled(Dialog.Title)`
 
 export const Close = styled(Dialog.Close)`
   float: right;
+  margin-top: -15px;
   border: none;
   background: none;
   color: #fff;
@@ -31,41 +32,38 @@ export const Close = styled(Dialog.Close)`
 `;
 
 export const Content = styled(Dialog.Content)`
-  min-width: 631px;
+  max-width: 563px;
   border-radius: 6px;
   padding: 40px 48px;
   background: #202024;
-  height: 194px;
 
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 `;
 
-//export const Button = styled.button`
+export const Options = styled.div`
+  display: flex;
+  width: 460px;
+  justify-content: center;
+  gap: 16px;
+`;
 
-//`;
+export const Button = styled.button`
+  background: #29292e;
+  border-radius: 6px;
+  height: 58px;
+  width: 211px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 32px;
 
-export const ButtonContent = styled.div`
-  margin: 5%;
-
-  button {
-    background: #29292e;
-    border-radius: 6px;
-    height: 58px;
-    width: 211.5px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    margin: 8px;
-
-    &:hover {
-      background-color: #29292a;
-      transition: background-color 0.5s;
-    }
+  &:hover {
+    background-color: ${(props) => (props.yes ? "#00b37e" : "#F75A68")};
+    transition: background-color 0.5s;
   }
-`
+`;
